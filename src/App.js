@@ -1,14 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-let name = 'altamash';
+import Navbar from './components/Navbar';
+import Form from './components/Textform';
+//import name could be anything since its default export
 
 function App() {
   return (
     //<></> this is jsx fragment to use multiple tags in one serve 
     <>
-      <div className="container">
-        hello from react {name}
-      </div>
+    <Navbar title="TextUtils" about="About Us"/>
+    <div className="container">
+    <Form heading="Enter text to analyse"/>
+    </div>
     </>
   );
 }
