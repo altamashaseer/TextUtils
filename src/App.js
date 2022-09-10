@@ -45,6 +45,7 @@ function App() {
       <div className="container my-3">
         <Form heading="Enter text to analyse below" mode={mode} showAlert={showAlert} />
         {/* <About/> */}
+        
       </div>
     </>
   );
