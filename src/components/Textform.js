@@ -20,12 +20,12 @@ export default function Textform(props) {
         setText(newText)
     }
     const handleCopy=()=>{
-        var text =document.getElementById('myBox');
-        text.select();
-        // text.setSelectionRange(0,9999); no use 
-        navigator.clipboard.writeText(text.value);
-        document.getSelection().removeAllRanges(); //used this because text was getting selected when copied
+        navigator.clipboard.writeText(text);
         props.showAlert('Copied to clipboard' , 'success')
+        // var text =document.getElementById('myBox');
+        // text.select();
+        // text.setSelectionRange(0,9999); no use 
+        // document.getSelection().removeAllRanges(); //used this because text was getting selected when copied
     }
     const handleExtraSpace=()=>{
         let newText=text.split(/[ ]+/);
